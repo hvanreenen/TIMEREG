@@ -81,15 +81,15 @@ class TimeReg:
                 writer.writerow([entry.month, entry.week, entry.date_str, entry.start_time_str, entry.end_time_str, entry.duration, entry.project.name, entry.task.name,
                                  entry.productivity_perc, entry.rating, entry.location])
 
-        proj_filename = 'C:/!Ontwikkel/CLINICS-DWH2.0/timereg/project_data.py'
-        with open(proj_filename, 'w', newline='\r\n', encoding='utf-8') as proj_data_file:
-            proj_data_file.write("""from timereg.projects import Project, Task, List\n\n""")
-            proj_data_file.write("""projects = []\n\n""")
-            for proj in self.project_data:
-                proj_data_file.write("""project = Project('{}')\n""".format(proj.name))
-                for task in proj.tasks:
-                    proj_data_file.write("""project.tasks.append(Task('{}'))\n""".format(task.name))
-                proj_data_file.write("""projects.append(project)\n\n""".format(proj.name))
+        # proj_filename = 'C:/!Ontwikkel/CLINICS-DWH2.0/timereg/project_data.py'
+        # with open(proj_filename, 'w', newline='\r\n', encoding='utf-8') as proj_data_file:
+        #     proj_data_file.write("""from timereg.projects import Project, Task, List\n\n""")
+        #     proj_data_file.write("""projects = []\n\n""")
+        #     for proj in self.project_data:
+        #         proj_data_file.write("""project = Project('{}')\n""".format(proj.name))
+        #         for task in proj.tasks:
+        #             proj_data_file.write("""project.tasks.append(Task('{}'))\n""".format(task.name))
+        #         proj_data_file.write("""projects.append(project)\n\n""".format(proj.name))
 
 
 
