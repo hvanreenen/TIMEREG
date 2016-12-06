@@ -23,5 +23,6 @@ project.tasks.append(Task('emails afhandelen'))
 project.tasks.append(Task('holocrazy training'))
 project.tasks.append(Task('inwerken/overdracht'))
 project.tasks.append(Task('overleg'))
+project.tasks.append(Task('code review voorbereiden'))
 projects.append(project)
 

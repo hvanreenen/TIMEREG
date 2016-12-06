@@ -66,7 +66,7 @@ class TimeRegApp:
         default_end_time = datetime.datetime.now()
         if time_entry.date < datetime.datetime.now().date():
             self.print('You forgot to registry the end time the other day.')
-            default_end_time = default_end_time.replace(year=default_end_time.date.year, month=default_end_time.date.month, day=default_end_time.date.day)
+            default_end_time = default_end_time.replace(year=default_end_time.date().year, month=default_end_time.date().month, day=default_end_time.date().day)
 
         time_entry.end_time = self.ask_for_end_time(time_entry,default_end_time)
         self.print_stats(time_entry)
