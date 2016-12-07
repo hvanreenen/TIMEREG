@@ -5,6 +5,7 @@ project.tasks.append(Task('framework aanpassen'))
 project.tasks.append(Task('fhir domain'))
 project.tasks.append(Task('datamart'))
 project.tasks.append(Task('vektis agb'))
+project.tasks.append(Task('ref data'))
 projects.append(project)
 
 project = Project('timereg')
