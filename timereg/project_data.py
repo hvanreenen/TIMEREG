@@ -7,6 +7,7 @@ project.tasks.append(Task('datamart'))
 project.tasks.append(Task('vektis agb'))
 project.tasks.append(Task('ref data'))
 project.tasks.append(Task('timeff mappings'))
+project.tasks.append(Task('refactor'))
 projects.append(project)
 
 project = Project('timereg')
