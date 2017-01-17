@@ -302,6 +302,7 @@ projects = []
 # i = projects.index(p)
 # if p in config.config['projects']:
 #     i = config.config['projects'].index(p)
-r = TimeRegApp()
-r.run()
+if __name__ == '__main__':
+    r = TimeRegApp()
+    r.run()
 # r.report()

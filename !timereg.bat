@@ -1,3 +1,4 @@
-set PYTHONPATH=%PYTHONPATH%;C:\!Ontwikkel\CLINICS-DWH2.0\timereg
-C:\Python34\python timeregistry.py
+set PYTHONPATH=%PYTHONPATH%;C:\!Ontwikkel\TIMEREG\timereg
+cd C:\!Ontwikkel\TIMEREG
+C:\Python35\python main.py
 pause

@@ -19,6 +19,8 @@ project.tasks.append(Task('soap koppeling research'))
 project.tasks.append(Task('code review'))
 project.tasks.append(Task('testen'))
 project.tasks.append(Task('conversie naar timeff van orthopedium'))
+project.tasks.append(Task('test api smart survey'))
+project.tasks.append(Task('debuggen'))
 projects.append(project)
 
 project = Project('algemeen')
@@ -30,7 +32,7 @@ project.tasks.append(Task('code review voorbereiden'))
 project.tasks.append(Task('admin dingen'))
 projects.append(project)
 
-project = Project('\3')
+project = Project('')
 project.tasks.append(Task('deployment'))
 projects.append(project)
 
