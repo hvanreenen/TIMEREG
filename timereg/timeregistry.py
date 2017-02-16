@@ -108,6 +108,7 @@ class TimeRegApp:
                 self.last_entry = entry
 
     def save_data(self):
+
         filename = self.config['filename']
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile, delimiter=';', quotechar="'", quoting=csv.QUOTE_MINIMAL)
@@ -118,8 +119,10 @@ class TimeRegApp:
                                  entry.productivity_perc, entry.rating, entry.location])
 
         def save_project_data():
+            import os
+            path = os.path.dirname(os.path.realpath(__file__))
             filename = 'project_data.py'
-            with open(filename, 'w', newline='', encoding='utf-8') as py_file:
+            with open(path + '/' + filename, 'w', newline='', encoding='utf-8') as py_file:
                 py_file.write("""from timereg.domain import Project, Task, List
 projects = []
 """)
