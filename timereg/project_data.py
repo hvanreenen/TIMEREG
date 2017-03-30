@@ -15,6 +15,7 @@ project.tasks.append(Task('debuggen'))
 project.tasks.append(Task('soap koppeling research'))
 project.tasks.append(Task('ad hoc vragen'))
 project.tasks.append(Task('onlineproms tryout'))
+project.tasks.append(Task('fouten analyse'))
 projects.append(project)
 
 project = Project('algemeen')
